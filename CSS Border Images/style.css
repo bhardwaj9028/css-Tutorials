@@ -1,0 +1,52 @@
+
+#box {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 350px;
+    width: 350px;
+    border: 30px solid black;
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+
+
+    /* border-image-source: url(border.png); */       /* jab hum border image lagayenge to border ka color nhi  dekhega*/
+   
+
+
+
+    /* border-image-slice: 21; */
+    /* border-image-slice: 21 10; */                    /* width 21      height 10*/
+   
+
+ 
+ /* border-image-repeat: repeat;
+    border-image-repeat: stretch;
+    border-image-repeat: round; 
+    border-image-repeat: repeat stretch; 
+    border-image-repeat: stretch repeat;  */
+
+
+
+
+    /* background-color: chartreuse;
+
+
+      border-image-outset: 30px; */                      /* ise image bahar chala jata hai mtlb khisak jata hai bahar ki trf bordder image*/
+   
+
+    /* border-image-width: 10px;       isme border image lagaye hai uski width badh jayega bhale hi hamne 30 border diya  ise usko kuch frk nhi pdega  srif image ki width badhegi */
+
+
+
+
+
+    /* border -image shorthand */
+
+    border-image: url(border.png) 21/15px/5px round;
+
+
+    
+    /* border-image: linear-gradient(red, yellow) 25; */
+    /* border-image: linear-gradient(to right, red, yellow) 25; */
+
+}

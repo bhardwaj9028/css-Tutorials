@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid Items Positioning</title>
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica;
+        }
+
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        .container {
+            background-color: #1bac7c;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 150px 150px;
+            grid-gap: 20px;
+        }
+
+        .items1 {
+            background: orangered;
+
+            /* grid-row-start: 3;
+            grid-row-end: 4;
+
+            grid-column-start: 3;
+            grid-column-end: 4; */
+
+
+
+            /*  short hand     aap  chahe  niche  ki jaisa likhe chahe  upar jaisa baat ek hi hai*/
+
+
+
+            /*     row  start /  row end*/
+            grid-row: 3 / 4;
+
+
+            /*  column start /  column end  */
+            grid-column: 3 / 4;
+
+
+
+
+
+        }
+
+        .items2 {
+            background: yellowgreen;
+
+            background: hotpink;
+
+            /* grid-row-start: 3;
+            grid-row-end: 4;
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+ */
+
+
+
+
+        }
+
+        .items3 {
+            background: slateblue;
+
+
+
+        }
+
+        .items4 {
+            background: hotpink;
+
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+
+
+
+
+        }
+
+
+
+        .items5 {
+            background: royalblue;
+
+
+        }
+
+        .items6 {
+            background: rgb(153, 218, 32);
+
+
+            /* grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3; */
+
+            /*  short hand     aap  chahe  niche  ki jaisa likhe chahe  upar jaisa baat ek hi hai*/
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+
+        }
+
+
+
+        .items7 {
+            background: rgb(34, 33, 32);
+
+        }
+
+        .items8 {
+            background: rgb(22, 7, 77);
+
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3; */
+
+
+
+
+
+        }
+
+        .items9 {
+            background: rgb(218, 32, 32);
+
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+ */
+
+        }
+
+
+
+
+
+
+
+
+        .items {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Baba : CSS Grid Items Positioning</h1>
+
+    <div class="container">
+        <div class="items items1">First</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Sixth</div>
+        <div class="items items7">seven</div>
+        <div class="items items8">eight</div>
+        <div class="items items9">nine</div>
+    </div>
+</body>
+
+</html>

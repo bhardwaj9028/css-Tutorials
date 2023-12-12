@@ -1,0 +1,336 @@
+#div1 {
+    background-color: blue;
+    color: white;
+  }
+
+
+
+
+  #div2 {
+    text-align: center;
+    border: 1px solid rgb(231, 5, 5);
+    
+
+  }
+  
+  #div3 {
+    text-align: left;                      /* text left me ho jayega  aur   text left me baraber ho jayega*/
+    border: 1px solid rgb(231, 5, 5);
+
+    
+  }
+  
+  #div4 {
+    text-align: right;                    /*   text right me ho jayega  aur right me text baraber ho jayega*/
+    border: 1px solid rgb(231, 5, 5);
+
+  }
+
+
+  #div5 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;          /*  ise dono trf se text  baraber ho jayega*/
+  }
+
+
+  #div6{
+    text-align: justify; 
+    border: 1px solid black;
+
+  }
+
+
+
+
+  /*Text Align Last*/
+
+
+  p.a {
+    text-align-last: right;             /*  ise jo text hoga wo right side se start hoga  */
+  }
+  
+  p.b {
+    text-align-last: center;             /* ise center me start hoga text */  
+  }
+  
+  p.c {
+    text-align-last: left;      /*  ise jo text hoga wo left side se start hoga  */
+  }
+
+  p.d {
+    text-align-last: justify;            /*   ise text baraber se start hoga*/
+  }
+
+
+
+
+
+
+  p.ex1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+
+
+  p.ex2 {
+    direction: lrt;
+    unicode-bidi: bidi-override;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* img.a {
+    vertical-align: baseline;
+  }
+  
+  img.b {
+    vertical-align: text-top;
+  }
+  
+  img.c {
+    vertical-align: text-bottom;
+  }
+  
+  img.d {
+    vertical-align: sub;
+  }
+  
+  img.e {
+    vertical-align: super;
+  } */
+
+
+
+
+
+  span{
+    /* vertical-align: text-top; */
+
+    /* vertical-align: baseline; */
+    /* vertical-align: text-bottom; */
+    vertical-align: sub;
+    vertical-align: super;
+    font-size: 10px;
+  }
+
+
+
+  
+  
+
+  .text1 {
+    text-decoration: overline;
+    text-decoration-color: purple;
+  }
+  
+
+
+  .text2 {
+    text-decoration: line-through;
+    text-decoration-color: rgb(128, 83, 0);
+  }
+  
+  .text3 {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 128, 11);
+  }
+  
+  .text4 {
+    text-decoration: overline underline;
+    text-decoration-color: rgb(60, 0, 128);
+  }
+
+  
+  .text5 {
+    text-decoration: none;
+    text-decoration-color: rgb(60, 0, 128);
+  }
+
+  
+
+  /* Specify a Style for the Decoration Line */
+
+  .exa1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid; /* this is default */
+  }
+  
+  
+  
+  .exa2  {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+  
+  .exa3  {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;  
+  }
+  
+  .exa4 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;  
+  }
+  
+  .exa5 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;  
+  }
+  
+  .exa6 {
+    text-decoration-line: underline;
+    text-decoration-color: red;  
+    text-decoration-style: wavy;  
+  }
+
+
+
+  /* Specify the Thickness for the Decoration Line */
+
+
+  .exa7 {
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;  /* this is default */
+  }
+  
+  .exa8 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+  }
+  
+  .exa9 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%;
+  }
+  
+  .exa10 {
+    text-decoration-line: underline;
+    text-decoration-color: red;  
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;  
+  }
+
+
+
+  /* The Shorthand Property */
+
+
+  .exa11 {
+    text-decoration: underline red double 5px;
+  }
+
+
+  /* using the text-transform property */
+
+  p.uppercase {
+    text-transform: uppercase;
+  }
+  
+  p.lowercase {
+    text-transform: lowercase;
+  }
+  
+  p.capitalize {
+    text-transform: capitalize;
+  }
+
+
+  /* Text Indentation     isme left side se pahla line khisak jata hai*/
+
+  .exa12 {
+    text-indent: 50px;
+  }
+
+
+
+  /* Letter Spacing */
+
+
+  .exa13 {
+    letter-spacing: 20px;
+  }
+  
+  .exa14 {
+    letter-spacing: -2px;
+  }
+
+
+  /* Line Height */
+
+
+  p.small {
+    line-height: 0.7;
+  }
+  
+  p.big {
+    line-height: 1.8;
+  }
+
+
+  /* Word Spacing */
+
+
+  p.one {
+    word-spacing: 40px;
+  }
+  
+  p.two {
+    word-spacing: -2px;
+  }
+
+
+
+  /* White Space */
+
+
+  .exa15{
+  
+      white-space: nowrap;
+    }
+  
+
+
+    /* CSS Text Shadow */
+
+
+    .text{
+      text-shadow: 2px 2px;
+    }
+
+
+    .text1 {
+      text-shadow: 2px 2px red;
+    }
+
+
+    .text2 {
+      text-shadow: 2px 2px 5px red;
+    }
+
+
+    .text3 {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+
+    .text4 {
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    }
+
+
+    .text5 {
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }

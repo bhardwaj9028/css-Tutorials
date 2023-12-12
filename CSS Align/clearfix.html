@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 30px;
+            color: blue;
+        }
+
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .with_clearfix_overflow {
+            overflow: auto;
+        }
+
+
+
+
+
+        /* new, modern clearfix hack */
+
+
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img3 {
+            float: right;
+        }
+
+        .img4 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            /*   display: block;   v laga skte hai */
+
+        }
+
+
+
+        .img5 {
+            float: left;
+        }
+
+        .clearfix::before {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Without Clearfix</h1>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+
+    <div class="without-clearfix">
+        <img class="img1" src="image.jpeg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2>clearfix hack using overflow: auto;</h2>
+    <h1 style="clear:right">With Clearfix</h1>
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+    <div class="with_clearfix_overflow">
+        <img class="img2" src="image.jpeg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+
+
+
+    <br><br><br><br><br> <br><br><br><br><br>
+
+
+
+    <h1>without New modern clearfix</h1>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+
+    <div>
+        <img class="img3" src="image.jpeg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2>new modern clearfix </h2>
+    <h1 style="clear:right">With New Modern Clearfix</h1>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="clearfix">
+        <img class="img4" src="image.jpeg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2>new modern clearfix </h2>
+    <h1 style="clear:left">With New Modern Clearfix</h1>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="clearfix">
+        <img class="img5" src="image.jpeg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+</body>
+
+</html>

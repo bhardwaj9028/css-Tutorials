@@ -1,0 +1,26 @@
+body{
+
+      background-image: url("image.jpg");
+
+      background-size: auto;                           /*  auto ka mtlb jo size hai image ki wahi rahe                     background-size:  me 3 value hai auto, contain, cover */ 
+      background-size: contain;
+      background-size: cover;                      /* cover mtlb ki pura page cover kar lega image*/
+    
+
+      background-size: 500px;                 /* width */
+      background-size: 500px 400px;                /* 500 width hai     aur 400 height*/
+
+
+
+      background-repeat: no-repeat;
+      background-repeat: repeat-x; 
+      background-repeat: repeat-y; 
+      background-repeat: repeat;                    /*by default*/
+  
+}   
+
+
+
+p {
+    background-image: url("image1.jpeg");
+}

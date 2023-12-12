@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            /* box-sizing: border-box; */
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+
+        img {
+            margin-top: 20px;
+        }
+
+
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid red;
+            width: 300px;
+            height: 350px;
+            box-sizing: border-box;
+            display: inline-block;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: 700px) {
+
+            /* CSS rules for mobile devices */
+            ul,
+            img,
+            .box {
+                flex-direction: column;
+
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+
+    <section>
+        <img src="photo.jpeg" width="300px">
+        <img src="photo.jpeg" width="300px">
+        <img src="photo.jpeg" width="300px">
+        <img src="photo.jpeg" width="300px">
+    </section>
+
+
+    <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

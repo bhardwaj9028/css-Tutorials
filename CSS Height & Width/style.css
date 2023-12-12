@@ -1,0 +1,29 @@
+
+        #first {
+            width: 500px;
+            border: 1px solid red;
+        }
+
+
+        #first1 {
+            width: 100%;                  /*   100%  ka mtlb screen ki puri width  hamari laptop ki screen 100% hoti hai         agar  100px  denge to wo  pure screen ki width nhi lega         aur  jab v responsive banaye hamesa % me hi width de*/
+           
+            border: 1px solid red;
+        }
+
+
+
+        #first2 {
+            width: 50%;                          /*  mtlb ki screen ka 50% */
+          
+            border: 1px solid red;
+        }
+
+
+        /* height*/
+        
+        #first3 {
+            width: 700px;
+            height: 200px;              /*  hieght ko hum % me nhi de skte hai*/
+            border: 1px solid red;
+        }

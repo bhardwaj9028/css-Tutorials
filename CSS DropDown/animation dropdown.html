@@ -1,0 +1,275 @@
+Anonymous function:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+        }
+
+        .main {
+
+            background-image: linear-gradient(40deg, rgb(199, 18, 46), yellow, green, blue);
+            width: 80%;
+            margin: auto;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .lione {
+            display: inline-block;
+            padding: 20px 25px;
+            position: relative;
+        }
+
+        .lione:hover {
+            background-color: blue;
+            color: brown;
+        }
+
+        /* drop down*/
+
+        .ultwo {
+
+            background-color: aqua;
+            width: 100px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            left: 0%;
+            top: 100%;
+
+        }
+
+        .litwo {
+            padding: 20px;
+        }
+
+        .lione:hover .ultwo {
+            opacity: 1;
+            visibility: visible;
+            transition: 2s;
+            left: 100%;
+        }
+
+        .litwo:hover {
+            background-color: chartreuse;
+            color: aquamarine;
+        }
+
+        .ulthree {
+            background-color: darkgoldenrod;
+            width: 150px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            top: 0%;
+            left: 100%;
+
+            transition: 3s;
+        }
+
+        .litwo:hover .ulthree {
+            opacity: 1;
+            visibility: visible;
+            right: 100%;
+        }
+
+        .lithree {
+            padding: 20px;
+        }
+
+        .lione:hover {
+            background-color: darkmagenta;
+        }
+
+        .ulfour {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            background-color: darkorange;
+            width: 100px;
+            top: 0%;
+            left: 100%;
+        }
+
+        .lithree:hover .ulfour {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lifour {
+            padding: 20px;
+        }
+
+
+        .a {
+            background-color: darkgoldenrod;
+            width: 150px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            top: 25%;
+            left: 100%;
+            transition: 2s;
+        }
+
+        .litwo:hover .a {
+            opacity: 1;
+            visibility: visible;
+            left: 100%;
+
+        }
+
+        .a {
+            padding: 30px;
+        }
+
+
+        .b {
+            background-color: darkgoldenrod;
+            width: 150px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            top: 50%;
+            right: 100%;
+            transition: 2s;
+        }
+
+        .litwo:hover .b {
+            opacity: 1;
+            visibility: visible;
+            right: 100%;
+        }
+
+        .b {
+            padding: 30px;
+        }
+
+
+        .c {
+            background-color: darkgoldenrod;
+            width: 150px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            top: 75%;
+            left: 100%;
+            transition: 2s;
+        }
+
+        .litwo:hover .c {
+            opacity: 1;
+            visibility: visible;
+            left: 100%;
+        }
+
+        .c {
+            padding: 30px;
+        }
+
+
+
+        .d {
+            background-color: rgb(140, 140, 203);
+            position: absolute;
+            width: 120px;
+            top: 100%;
+            left: 0%;
+            opacity: 0;
+            text-align: center;
+            visibility: hidden;
+            transition: width 2s;
+
+        }
+
+        .lione:hover .d {
+            opacity: 1;
+            visibility: visible;
+            left: 100%;
+            width: 200%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul class="ulone">
+            <li class="lione">Home
+                <ul class="d">
+                    <li>python</li>
+                    <li>java</li>
+                    <li>cpp</li>
+                    <li>c</li>
+                    <li>node</li>
+
+                </ul>
+
+
+
+            </li>
+            <li class="lione">About</li>
+            <li class="lione">Contact</li>
+            <li class="lione">Courses <!--relative-->
+                <ul class="ultwo"> <!--absolute -->
+                    <li class="litwo">html
+                        <ul class="ulthree"> <!--absolute-->
+                            <li class="lithree">paragrap
+                                <ul class="ulfour"> <!--absolute-->
+                                    <li class="lifour">p tag</li>
+                                    <li class="lifour">h tag</li>
+                                    <li class="lifour">b tag</li>
+                                    <li class="lifour">img tag</li>
+                                </ul>
+                            </li>
+                            <li class="lithree">heading</li>
+                            <li class="lithree">image</li>
+                        </ul>
+                    </li>
+                    <li class="litwo">css
+                        <ul class="a">
+                            <li>color</li>
+                            <li>margin</li>
+                            <li>padding</li>
+                            <li>width</li>
+                            <li>height</li>
+                        </ul>
+
+
+                    </li>
+                    <li class="litwo">js
+                        <ul class="b">
+                            <li>next.js</li>
+                            <li>node.js</li>
+                            <li>rect.js</li>
+                            <li>sql</li>
+                            <li>mysql</li>
+                        </ul>
+
+
+                    </li>
+                    <li class="litwo">reaxt
+                        <ul class="c">
+                            <li>animation</li>
+                            <li>3d</li>
+                            <li>function</li>
+                            <li>define</li>
+                            <li>call</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+border-box Default value. The background extends behind the border
+padding-box The background extends to the inside edge of the border
+content-box The background extends to the edge of the content box
+Text(experimental)
+initial Sets this property to its default value. Read about initial
+inherit Inherits this property from its parent element. Read about inherit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+    <title>Background Clip</title>
+    <style>
+        body {
+            background-color: slategrey;
+        }
+
+        h1 {
+            color: white;
+
+            background-image: url(photo.jpeg);
+            font-size: 150px;
+            font-family: impact;
+            background-clip: text;
+            background-clip: text;
+        }
+
+        #box {
+            width: 800px;
+            height: 300px;
+            padding: 30px;
+            color: black;
+            text-align: justify;
+            border: 20px dotted black;
+            background-color: white;
+
+            background-clip: padding-box;
+            background-clip: border-box;
+            background-clip: content-box;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Baba : CSS Background-Clip</h1>
+
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae
+            turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero.
+            Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate
+            porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae
+            turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero.
+            Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate
+            porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae
+            turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero.
+            Phasellus malesuada tincidunt elit vitae feugiat.</p>
+    </div>
+
+</body>
+
+</html>

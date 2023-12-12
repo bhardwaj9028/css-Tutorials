@@ -1,0 +1,42 @@
+<!-- normal	                Default value. Uses default line break rules	
+break-all	            To prevent overflow, word may be broken at any character	
+keep-all 	           Word breaks should not be used for Chinese/Japanese/Korean (CJK) text. Non-CJK text behavior is the same as value "normal"	
+break-word	           To prevent overflow, word may be broken at arbitrary points	
+initial	               Sets this property to its default value. Read about initial	
+inherit               	Inherits this property from its parent element. Read about inherit	
+
+ -->
+
+
+
+<html>
+
+<head>
+    <title></title>
+    <style>
+        #box {
+            width: 400px;
+            border: 2px solid black;
+            /* word-break: keep-all; */
+
+            word-break: break-all;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Baba : CSS Word-break</h1>
+
+    <div id="box">
+        Lorem vvvvvvvvvvvvvvvvvvvvvvvvvvveryloooooooooooooooooooooooooooooooong ipsum dolor sit amet,
+        consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem.
+        consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem.
+        consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem.
+        consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem.
+
+    </div>
+
+</body>
+
+</html>

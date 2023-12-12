@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 25px;
+        }
+
+
+
+        /* img[alt="Image of cat"] {                      
+            /* border: 3px solid rgb(190, 50, 15);
+
+        }  */
+
+
+
+        /* img[alt^="Image"] {                     /*ab Image of cat    likha   hai to   hamesa  apko     pahla   word likhna hai tab  lega ye     hamesa pahle  word ko trhet karta hai*/
+        /* border: 3px solid rgb(190, 50, 15);
+
+        }  */
+
+
+
+        img[alt^="cat"] {
+            /*ab Image of cat    likha   hai to   hamesa  apko     pahla   word likhna hai tab  lega ye     hamesa pahle  word ko trhet karta hai                   ab  hamne  cat likha to style apply nhi hogi    kyuki hamesa pahla word likhna hai*/
+            border: 3px solid rgb(190, 50, 15);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Attribute Selectors</h1>
+
+    <img src="image.jpeg" width="200px" alt="Image of cat">
+
+    <p>Lorem<a href="">ipsum dolor</a> sit amet consectetur adipisicing elit. Ipsa cum ipsam reprehenderit repellat
+        dolorum nam accusantium. Illo, laudantium dolores eveniet ipsum tenetur nostrum sequi quibusdam, veritatis
+        doloremque beatae ea est!
+        dolorum nam accusantium. Illo, laudantium dolores eveniet ipsum tenetur nostrum sequi quibusdam, veritatis
+        doloremque beatae ea est!
+    </p>
+
+    <img src="image.jpeg" title="flower" width="200px">
+
+
+    <br><br>
+
+    Name <input type="text"> <br><br>
+
+
+    Gender <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+
+    Address <input type="text"> <br><br>
+
+    password<input id="userPassword" type="password" />
+
+</body>
+
+</html>

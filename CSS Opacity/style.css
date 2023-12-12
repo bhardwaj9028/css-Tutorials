@@ -1,0 +1,63 @@
+.img1 {
+    opacity: 0.5;
+
+    /* opacity: 0;     0 karne par pura image hinde ho jayegi  hover lagane par dekhega */
+
+  }
+
+
+  /* opacity with hover */
+
+
+  .img2 {
+    opacity: 0.5;
+  }
+  
+  .img2:hover {
+    opacity: 1.0;
+  }
+
+
+
+
+  .div{
+    border: 1px solid red;
+    width: 200px;
+    height: 300px;
+    background-color: blueviolet;
+    opacity: 0.5;
+  }
+
+
+  .div:hover {
+    opacity: 1.0;
+  }
+
+
+
+
+
+
+  /* Text in Transparent Box */
+
+  
+  div.background {
+    background: url(photo.jpeg) repeat;
+    border: 2px solid black;
+  }
+  
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+
+

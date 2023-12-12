@@ -1,0 +1,91 @@
+ul {
+        list-style-type: disc;    / *  by defoult   disc hi rahta   .  .  .  */
+                                  
+
+        list-style-type: circle;  
+        /* list-style-type: square;  
+        list-style-type: none;   */
+
+  }
+
+
+
+  ol {
+
+
+       /* one by one comment karki check karo*/ 
+
+
+        list-style-type: decimal;                           /* by defoult   decimal rahta hai      1  2  3 me*/
+
+        list-style-type: decimal-leading-zero; 
+
+        list-style-type: none; 
+     
+        list-style-type: upper-alpha; 
+
+         list-style-type: lower-alpha; 
+
+        list-style-type: upper-roman; 
+
+        list-style-type: lower-roman; 
+
+        list-style-type: arabic-indic; 
+
+        list-style-type:bengali; 
+
+        list-style-type: Telugu;; 
+
+        list-style-type: armenian;
+
+        list-style-type: cjk-ideographic;
+
+        list-style-type: georgian;
+
+        list-style-type: hebrew;
+
+        list-style-type: hiragana;
+
+        list-style-type: hiragana-iroha;
+
+
+        list-style-type: katakana;
+
+        list-style-type: katakana-iroha;
+
+        list-style-type: lower-greek;
+
+        list-style-type: inherit; 
+
+  }
+
+
+
+  /* list-style-position */
+
+
+      ul.a {
+          list-style-position: outside;
+          background: red;
+          color: rgb(235, 241, 241);
+}
+
+     ul.b {
+         list-style-position: inside;
+}
+
+
+
+
+     ul.c {
+       list-style-image: url("icon.png");
+}
+
+
+
+
+/* List - Shorthand property  */
+
+ul.d {
+    list-style: square inside url("icon.png");
+  }

@@ -1,0 +1,54 @@
+body{
+
+/*   background-image: url("image.jpg"),url("image1.jpeg");
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: 0% 0%, 100% 4%; */
+
+
+
+
+     /* background-image: url("image.jpg"),url("image1.jpeg"),url("image3.jpeg");
+     background-repeat: no-repeat;
+     background-size: 25%;
+     background-position: 0% 0%,   33.33%  0%,    66.66%  0%;  */
+
+
+
+
+      /* background-image: url("image.jpg"),url("image1.jpeg"),url("image3.jpeg");
+      background-repeat: no-repeat;
+      background-size: 400px,cover;
+
+     
+      background-position: left,0% 0%; 
+      background-position: right,0% 0%; 
+      background-position: center,0% 0%; 
+      background-position: bottom, 0% 0%;  
+      background-position: top, 0% 0%;  */
+     
+
+
+     background-image: url("image.jpg"),url("image1.jpeg"),url("image3.jpeg");
+     background-repeat: no-repeat;
+     background-size: 400px,cover;
+
+     
+     /* background-position: left,0% 0%; */
+     /* background-position: right,0% 0%; */
+     /* background-position: center,0% 0%; */
+     /* background-position: bottom, 0% 0%;  */
+        /* background-position: top, 0% 0%;  */
+
+/* 
+        background-position:left top, 0% 0%;  */
+        background-position:right top, 0% 0%; 
+        background-position:center top, 0% 0%; 
+        background-position:center center, 0% 0%; 
+
+        background-position:center top; 
+        background-position:left bottom; 
+     
+
+
+}

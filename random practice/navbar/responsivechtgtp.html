@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Navbar with Search Box</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+        nav {
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input[type="text"] {
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .search-box button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            display: none;
+            color: #333;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .links {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .links li {
+            padding: 0 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        @media screen and (max-width: 768px) {
+            .search-box {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .links {
+                display: none;
+                flex-direction: column;
+                background-color: #f0f0f0;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .links li {
+                padding: 5px 0;
+            }
+
+            .links.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <!-- Rest of the page content -->
+    </div>
+</body>
+
+</html>

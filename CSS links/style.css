@@ -1,0 +1,263 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
+a:link{
+    color: rgb(87, 165, 42);        /*link  ka color green hoga jab tak hum us link ko open nhi kiye honge*/
+    text-decoration: none;
+    background-color: yellow;
+}
+
+
+
+a:visited{                           /* jab  hum us link pr visit kar denge yani link open kar denge to  color red ho jayega */
+    color: rgb(221, 3, 3);
+    background-color: rgb(136, 136, 115);
+}
+
+
+a:hover{
+    color: rgb(204, 29, 125);   
+    background-color: crimson;          
+}
+
+
+a:active{                     /*  jab aap hold karki yani link pr mouse ki curser ko rakhege kuch der to uska color  yellow rahega*/
+    color: rgb(177, 204, 150);
+    background-color: aqua;
+}
+
+
+
+.rekha:link, .rekha:visited {
+    background-color: #130f0e;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .rekha:hover, .rekha:active {
+    background-color: rgb(13, 235, 24);
+  }
+
+
+
+  .cursors{
+    cursor:auto;
+
+  }
+
+  .cursors1{
+    cursor:default;
+
+  }
+  
+  .cursors2{
+    cursor:none;
+
+  }
+  .cursors3{
+    cursor:context-menu;
+
+  }
+
+
+  .cursors4{
+    cursor:help;
+
+  }
+  
+  
+  
+  .cursors5{
+    cursor:pointer;
+
+  }
+  
+  
+  .cursors6{
+    cursor:progress;
+
+  }
+  
+  
+  .cursors7{
+    cursor:help;
+
+  }
+  
+  
+  .cursors8{
+    cursor:wait;
+
+  }
+
+  .cursors9{
+    cursor:help;
+
+  }
+  
+  .cursors10{
+    cursor:cell;
+
+  }
+  
+  .cursors11{
+    cursor:crosshair;
+
+  }
+  
+  
+  .cursors12{
+    cursor:text;
+
+  }
+  
+  
+  .cursors13{
+    cursor:vertical-text;
+
+  }
+  
+  
+  .cursors14{
+    cursor:alias;
+
+  }
+  
+  
+  .cursors15{
+    cursor:copy;
+
+  }
+  
+  
+  .cursors16{
+    cursor:move;
+
+  }
+  
+  
+  .cursors17{
+    cursor:no-drop;
+
+  }
+  
+  
+  .cursors18{
+    cursor:not-allowed;
+
+  }
+  
+  .cursors19{
+    cursor:e-resize;
+
+  }
+  
+  
+  .cursors20{
+    cursor:ne-resize;
+
+  }
+  
+  
+  .cursors21{
+    cursor:nw-resize;
+
+  }
+
+
+  .cursors22{
+    cursor:s-resize;
+
+  }
+  
+  
+  .cursors23{
+    cursor:se-resize;
+
+  }
+  
+  
+  .cursors24{
+    cursor:sw-resize;
+
+  }
+  
+  
+  .cursors25{
+    cursor:w-resize;
+
+  }
+  
+  
+  .cursors26{
+    cursor:ew-resize;
+
+  }
+  
+  
+  .cursors27{
+    cursor:ns-resize;
+
+  }
+  
+  
+  .cursors28{
+    cursor:nesw-resize;
+
+  }
+  
+  
+  .cursors29{
+    cursor:nwse-resize;
+
+  }
+  
+  
+  .cursors30{
+    cursor:col-resize;
+
+  }
+  
+  
+  .cursors31{
+    cursor:row-resize;
+
+  }
+  
+  .cursors32{
+    cursor:all-scroll;
+
+  }
+
+  .cursors33{
+    cursor:zoom-in;
+
+  }
+  
+  
+  .cursors34{
+    cursor:zoom-out;
+
+  }
+  
+  
+  .cursors35{
+    cursor:grab;
+
+  }
+  
+  
+  .cursors36{
+    cursor:grabbing;
+
+  }

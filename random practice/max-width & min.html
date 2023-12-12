@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+
+        .main1 {
+            display: flex;
+
+        }
+
+
+
+
+        .d {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+        .e {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+
+        .f {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media(max-width: 768.5px) {
+
+
+
+            .main1 {
+                display: block;
+                flex-direction: column;
+            }
+        }
+
+
+
+
+
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 5px solid #41f50a;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main1">
+        <div class="d">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa, voluptates quam
+            atque
+            praesentium eos fugit natus ratione corrupti error minus, distinctio delectus mollitia odit aliquid
+            veniam
+            pariatur quas itaque.</div>
+        <div class="e">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+        <div class="f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+        <div class="f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+
+    </div>
+
+
+
+    <br>
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="photo.jpeg" alt="Cinque Terre" width="600" height="400">
+
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="photo.jpeg" alt="Forest" width="600" height="400">
+
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="photo.jpeg" alt="Northern Lights" width="600" height="400">
+
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+
+
+
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="photo.jpeg" alt="Mountains" width="600" height="400">
+
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

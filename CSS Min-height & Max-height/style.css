@@ -1,0 +1,27 @@
+
+
+#first {
+    width: 700px;
+    height: 200px;                             /*  hamne jab srif hieght diya to content hamara overflow karne laga    isi   problem ko fix karne ki liye  hum     min-hieght  aur max-hieght  ka use karte hai       */              
+    border: 3px solid rgb(48, 30, 211);
+}
+
+
+
+
+
+#first1 {
+    width: 700px;
+    min-height: 200px;                                             
+    border: 3px solid rgb(66, 211, 30);
+}
+
+
+
+#first2 {
+    width: 700px;
+    min-height: 200px; 
+
+    max-height: 500px;                          /*   mininum hieght  to aa hi rahi      likin   agar   aap  chahte hai   ki  jab  content   badhe  to had se had 500px  tak  hi badhe     to aisa karne ki liye hum   max-height   ka use karenge                   aur ek baat jaise hi  500px  ho jayega phir se content overflow karne lagega    agar  aap max- hieght lagate ho to         aur   agar   min-hieght lagate ho srif to content kitna v badha lo overflow nhi karega */                                   
+    border: 3px solid rgb(66, 211, 30);
+}

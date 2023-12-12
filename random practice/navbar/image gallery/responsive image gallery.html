@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h3 {
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="photo.jpeg" alt="Image 1">
+            <div class="overlay">
+                <h3>Image 1</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="photo.jpeg" alt="Image 2">
+            <div class="overlay">
+                <h3>Image 2</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="photo.jpeg" alt="Image 3">
+            <div class="overlay">
+                <h3>Image 3</h3>
+            </div>
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+
+</body>
+
+</html>

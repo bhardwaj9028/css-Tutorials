@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Navbar</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+        .navbar {
+            background-color: #f0f0f0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .menu-icon {
+            display: none;
+            color: #333;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+        }
+
+        .links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .links {
+                display: none;
+            }
+
+            .links.active {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .links.active a {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Rest of the page content -->
+    </div>
+</body>
+
+</html>

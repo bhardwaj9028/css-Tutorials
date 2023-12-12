@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar with Logo, Search Button, and Shopping Icon</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+        .navbar {
+            background-color: #f0f0f0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input[type="text"] {
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .search button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .shopping-icon {
+            color: #333;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="shopping-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Rest of the page content -->
+    </div>
+</body>
+
+</html>

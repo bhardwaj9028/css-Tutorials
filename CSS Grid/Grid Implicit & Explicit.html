@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        body {
+            font-family: arial, helvetica;
+        }
+
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        .container {
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+            display: grid;
+
+            /* srif 2 column banaya hai*/
+            grid-template-columns: repeat(2, 1fr);
+
+
+            /* srif 2 rows hai  120 120  ki                     humne jo baki ka row hai usko nhi dala uski setting nhi diya               to  jin column row ko define kiya hai   wo   Explicit   honge      aur  jo bache hue row hai jinko define nhi kiya hai  wo  implicit  hai                      aur  jo implicit hai  usko define karne ki liye alg tarika hai  uski   liye  kuch  alg  properties hai                grid-auto  ,  grid-auto-columns  ,   grid-auto-flows*/
+            grid-template-rows: repeat(2, 120px);
+            grid-gap: 15px;
+
+
+
+
+            /* Implicit jo bache hue rows the unko in properies se define karenge    80px ho jayega unki hieght jo bache hue row the*/
+            grid-auto-rows: 80px;
+
+            /*implicit ka column yani jo new column add honge unki width*/
+            grid-auto-columns: .5fr;
+
+
+            /* grid-auto-flow: row;    by defout*/
+            grid-auto-flow: row;
+
+
+            /* agr aap chahte hai ki jo new row bane  to wo row me na aaye coloumn me aaye  to iska use karte hai*/
+            grid-auto-flow: column;
+
+
+        }
+
+        .item1 {
+            background: orangered;
+        }
+
+        .item2 {
+            background: yellowgreen;
+        }
+
+        .item3 {
+            background: MEDIUMPURPLE;
+        }
+
+        .item4 {
+            background: hotpink;
+        }
+
+        .item5 {
+            background: royalblue;
+        }
+
+        .item6 {
+            background: ORCHID;
+        }
+
+        .item7 {
+            background: goldenrod;
+        }
+
+        .item8 {
+            background: #7DCEA0;
+        }
+
+        .items {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Yahoo Baba : CSS Implicit Explicit Grid</h1>  -->
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+
+    </div>
+</body>
+
+</html>

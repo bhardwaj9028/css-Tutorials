@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            padding-left: 40px;
+        }
+
+        .box1,
+        .box2 {
+            padding: 25px 10px;
+            border: 2px solid gray;
+        }
+
+
+        /* div.container p:nth-child(1) {
+            /* ab   1     dala to  ye dekhega ka   box  ke  ander  1  number pe kaha p dekh raha   jaha ise  1 number pe     p dekhega  waha pe  style apply   kar dega           aise  hi hum 2    3   4   5  kar skte hai*/
+        /* color: red;
+        } */
+
+
+        /* div.container p:nth-child(2) {
+            color: red;
+        } */
+
+        /* div.container p:nth-child(3) {
+            color: red;
+        }
+
+        div.container p:nth-child(4) {
+            color: red;
+        } */
+
+
+        /* div.container p:nth-child(even) {
+            color: red;
+        } */
+
+        /* div.container p:nth-child(odd) {
+            color: red;
+        } */
+
+
+        div.container p:nth-child(2n) {
+            /* even ki jaise hi kaam karta hai*/
+            color: red;
+        }
+
+
+        div.container p:nth-child(2n+1) {
+            /* odd ki jaise kaam karta hai*/
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h3>Box1 Heading</h3>
+            <p>Box1 paragraph One</p>
+            <p>Box1 paragraph Two</p>
+            <p>Box1 paragraph three</p>
+            <p>Box1 paragraph four</p>
+        </div>
+
+        <p>Container paragraph One</p>
+        <p>Container paragraph two</p>
+
+        <div class="box2">
+            <p>Box2 paragraph One</p>
+            <p>Box2 paragraph two</p>
+            <p>Box2 paragraph three</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+
+        .auto {
+            color: rgb(143, 3, 3);
+            font-weight: bold;
+        }
+
+
+        #box {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+
+
+        #box1 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow: hidden;
+            /*  jo data niche overflow ho raha tha wo hidden ho jayega*/
+        }
+
+
+        #box2 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow: scroll;
+        }
+
+
+
+
+        #box3 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow: auto;
+        }
+
+
+        #box4 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow: auto;
+        }
+
+
+
+        #box5 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow: visible;
+            /* defoult value hai   */
+        }
+
+
+
+
+        #box6 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow-y: hidden;
+            /*y ka mtlb vertically*/
+        }
+
+
+        #box7 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow-y: scroll;
+
+        }
+
+
+        #box8 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow-y: auto;
+
+        }
+
+        #box9 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(219, 12, 12);
+            overflow-y: auto;
+
+        }
+
+
+        #box10 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(7, 131, 13);
+            overflow-x: auto;
+
+        }
+
+
+        #box11 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(7, 131, 13);
+            overflow-x: hidden;
+
+        }
+
+
+
+        #box12 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(7, 131, 13);
+            overflow-x: scroll;
+        }
+
+
+        #box13 {
+            margin-top: 60px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid rgb(7, 131, 13);
+            overflow-x: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Overflow</h1>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+    </div>
+
+
+    <br><br><br><br>
+
+
+    <h1>overflow: Hidden</h1>
+    <div id="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+    </div>
+
+    <br><br><br><br>
+
+    <h1> overflow: scroll;</h1>
+    <div id="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+    </div>
+
+
+    <br><br><br><br>
+
+    <h1>overflow: auto</h1>
+
+
+
+
+
+
+    <h1 class="auto">overflow: auto me jab data kam rahega to scroll bar nhi aayega. jab data jayada hoga tab scroll
+        baar aayega</h1>
+
+
+
+    <div id="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+
+    </div>
+
+
+
+
+
+    <h1 class="auto"> aur jab data jayada hoga to automatically scroll baar aa jayega </h1>
+    <div id="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+    </div>
+
+    <br>
+
+
+    <h1> overflow: visible</h1>
+    <div id="box5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+
+    </div>
+
+
+    <br><br><br><br>
+    <br>
+
+    <h1>overflow-y: hidden;</h1>
+    <h1>y ka mtlb vertically. aur vertically sara data hide ho jayega </h1>
+    <div id="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem
+    </div>
+
+
+    <br><br><br>
+
+    <h1> overflow-y: scroll;</h1>
+    <h1> vertically scroll baar aa jayega </h1>
+    <div id="box7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem
+    </div>
+
+    <br><br><br>
+
+
+
+    <h1> overflow-y: auto;</h1>
+    <h1 class="auto">jab data kam rahega to scroll bar nhi dekhega overflow-y: auto; aur jab data jayada rahega to
+        vertically scroll bar automatically aa jayega</h1>
+    <div id="box8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+
+    </div>
+
+    <br><br>
+
+    <h1> overflow-y: auto;</h1>
+    <h1 class="auto"> ab data jayada hai to vertically scroll bar aa gaya</h1>
+    <div id="box9">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem
+    </div>
+
+
+    <br><br>
+
+    <h1>Overflow-x: auto</h1>
+    <h1 class="auto">isme hamne image lagaya ki ise aisa data mile ki vertically aur horizonitilly scroll ho to image
+        lagaya to dono trf se scroll ho raha</h1>
+
+    <div id="box10">
+        <img src="photo.jpeg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+    </div>
+
+
+    <br><br>
+
+    <h1>Overflow-x: hidden</h1>
+
+    <h1> jab hum Overflow-x: hidden karenge to srif vertically scroll bar dekhega . horizonitilly scroll bar hide ho
+        jayega </h1>
+    <div id="box11">
+        <img src="photo.jpeg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+
+    </div>
+
+    <br><br>
+
+    <div id="box12">
+        <img src="photo.jpeg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+
+    </div>
+
+
+    <br><br>
+
+    <div id="box13">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas itaque temporibus voluptatibus
+        iure autem sed et natus? Dolore architecto reiciendis, veniam obcaecati deserunt eum exercitationem nam at eos
+        repellat.
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

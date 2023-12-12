@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .main {
+            display: flex;
+            /* border: 1px solid red; */
+
+        }
+
+
+        .a {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+
+        .b {
+            border: 1px solid green;
+
+
+            min-height: 100px;
+            background-color: blue;
+
+        }
+
+
+        .c {
+            border: 1px solid green;
+
+
+            min-height: 100px;
+            background-color: darkgoldenrod;
+
+        }
+
+
+        @media(min-width: 768.6px) {
+            /*  iska  mtlb ye hai ki jab iski width minuime 768.6 ho  yani is size pe aaye to  box ka background color change ho jaye        to 768.6px  se jitna v size aayega uska color change milega*/
+
+
+            .a {
+                background-color: chartreuse;
+            }
+        }
+
+
+        @media(max-width: 768.5px) {
+            /*   iska mtlb ye hai ki jab max - width 768  pe aaye to tino  box  display block ho jaye yani ki  pura width le   jab mobile ki size me aaye   to                       aur  0  se 768  tak block rahega box       768  ki upar nhi rahega */
+
+
+            .main {
+                display: block;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .main1 {
+            display: flex;
+
+        }
+
+
+
+
+        .d {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+        .e {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+
+        .f {
+            border: 1px solid green;
+
+            min-height: 100px;
+            background-color: aqua;
+        }
+
+
+
+        @media(min-width: 768.6px) {
+            /*  iska  mtlb ye hai ki jab iski width minuime 768.6 ho  yani is size pe aaye to  box ka background color change ho jaye        to 768.6px  se jitna v size aayega uska color change milega*/
+
+
+            .e {
+                background-color: chartreuse;
+            }
+        }
+
+
+        @media(max-width: 768.5px) {
+            /*   iska mtlb ye hai ki jab max - width 768  pe aaye to tino  box  display block ho jaye yani ki  pura width le   jab mobile ki size me aaye   to                       aur  0  se 768  tak block rahega box       768  ki upar nhi rahega */
+
+
+            .main1 {
+                display: block;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* @media(max-width: 768px) {           /*   iska mtlb ye hai ki jab max - width 768  pe aaye to tino  box  display block ho jaye yani ki  pura width le   jab mobile ki size me aaye   to                       aur  0  se 768  tak block rahega box       768  ki upar nhi rahega */
+        /* .main {
+                display: block;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa, voluptates quam atque
+            praesentium eos fugit natus ratione corrupti error minus, distinctio delectus mollitia odit aliquid veniam
+            pariatur quas itaque.</div>
+        <div class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+        <div class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="main1">
+        <div class="d">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa, voluptates quam atque
+            praesentium eos fugit natus ratione corrupti error minus, distinctio delectus mollitia odit aliquid veniam
+            pariatur quas itaque.</div>
+        <div class="e">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+        <div class="f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse nam delectus
+            molestiae, dolore incidunt ab eaque, inventore explicabo optio iste velit cupiditate magni debitis nisi!
+            Aliquid, suscipit cum!</div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

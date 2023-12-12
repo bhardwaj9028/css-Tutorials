@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        body {
+            font-family: arial, helvetica;
+        }
+
+
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        .container {
+            background: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: max-content 1fr 1fr 1fr;
+            /* 4 column hai  pahle  column ko max content de diya      ,    max-content me ye hota hai ki wo content badhta hi jata hai width leke   isme line break nhi hota */
+
+
+            grid-template-rows: repeat(2, min-content);
+            /* 2 row hai yaha pe  aur dono row ko  min-content diya hai       yani  ki data kitna v ho wo overflow nhi kareaga      jab  hum  min ko   row me likhenge      agar   column me lekhe to overflow karega*/
+            grid-gap: 5px;
+        }
+
+        .item1 {
+            background: orangered;
+        }
+
+        .item2 {
+            background: yellowgreen;
+        }
+
+        .item3 {
+            background: MEDIUMPURPLE;
+        }
+
+        .item4 {
+            background: hotpink;
+        }
+
+        .item5 {
+            background: royalblue;
+        }
+
+        .item6 {
+            background: ORCHID;
+        }
+
+        .item7 {
+            background: goldenrod;
+        }
+
+        .item8 {
+            background: #7DCEA0;
+        }
+
+        .items {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+
+
+
+        .container1 {
+            background: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: max-content 1fr 1fr 1fr;
+            /* 4 column hai  pahle  column ko max content de diya      ,    max-content me ye hota hai ki wo content badhta hi jata hai width leke   isme line break nhi hota */
+
+
+            grid-template-rows: repeat(2, minmax(150px, min-content));
+            /* isme miniumm hieght 150  hai   aur   min content dala hai to data kitna v badh jaye wo overflow nhi karega   wo box  apne aap height badha lega   content ki hisab se*/
+
+            grid-template-rows: repeat(2, minmax(150px, 500px));
+            /* iska mtlb ye hai ki  minium hieght 150 hai aur maxium 500    aur agar 500 jaise cros hoga data overflow karne lagega*/
+
+            grid-gap: 5px;
+        }
+
+
+        .item-ONE {
+            background: orangered;
+        }
+
+        .item-TWO {
+            background: yellowgreen;
+        }
+
+        .item-THREE {
+            background: MEDIUMPURPLE;
+        }
+
+        .item-FOUR {
+            background: hotpink;
+        }
+
+        .item-FIVE {
+            background: royalblue;
+        }
+
+        .item-SIX {
+            background: ORCHID;
+        }
+
+        .item-SEVEN {
+            background: goldenrod;
+        }
+
+
+        .item-EIGHT {
+            background: #7DCEA0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container2 {
+            background: wheat;
+            width: 80%;
+            margin: 45px auto 0;
+
+            display: grid;
+
+
+
+            /* minmax  in column                                      app  aise v likh skte ho 150 , 300  ya  150, 50%  ya   150, ifr */
+
+            /* grid-template-columns: minmax(150px, 300px) 1fr 1fr min-content;                           column me minmax ka matlb hai  ki   ab isme   4  column hai  to maine  pahle  coloumn ko   minmax(150px, 300px)    de diya   to iska mtlb hai  ki jab hum use resposive karenge to      uski  miniumm    width 150px   hogi  aur maxiumm 300px         yani  aap kitna v kam karo use wo 150 hi rahega   aur  kitna hi badhao 300   tak hi rahega                      */
+
+            /* grid-template-columns: minmax(150px, 50%) 1fr 1fr min-content; */
+
+            grid-template-columns: minmax(150px, 1fr) 1fr 1fr min-content;
+
+
+
+            grid-template-rows: repeat(2, minmax(150px, min-content));
+            grid-gap: 5px;
+        }
+
+        .item-one {
+            background: orangered;
+        }
+
+        .item-two {
+            background: yellowgreen;
+        }
+
+        .item-three {
+            background: MEDIUMPURPLE;
+        }
+
+        .item-four {
+            background: hotpink;
+        }
+
+        .item-five {
+            background: royalblue;
+        }
+
+        .item-six {
+            background: ORCHID;
+        }
+
+        .item-seven {
+            background: goldenrod;
+        }
+
+        .item-eight {
+            background: #7DCEA0;
+        }
+
+        .item-nine {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{max-content isme content badhta hi jayega badhta hi jayeg LINE break nhi hoga}},<mark>{min-content} isme data
+            overflow nhi karega agar row me lagaya min-content ko to , aur ye width words ki hisab se leata hai jo word
+            jitna bada rahega width uski hisab se hi rahegi </mark></h1>
+
+
+    <div class="container">
+        <div class="items item1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Similiq <mark>
+                {{max-content}}</mark> </div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quos
+            reprehenderit aspernatur harum maiores incidunt autem, nulla omnis facere in voluptatibus corrupti. Veniam
+            suscipit labore quibusdam commodi! Deserunt, voluptatum nisi.
+
+            reprehenderit aspernatur harum maiores incidunt autem, nulla omnis facere in voluptatibus corrupti. Veniam
+            suscipit labore quibusdam commodi! Deserunt, voluptatum nisi.
+        </div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur cupiditate
+            quisquam recusandae, quibusdam alias similique suscipit nemo labore minus ipsum quo, sed quos aspernatur
+            molestias magnam amet cum eius.</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <h1> minmax in rows , aur ye hieght ki liye hai </h1>
+    <div class="container1">
+        <div class="items item-ONE">One
+        </div>
+        <div class="items item-TWO">Two</div>
+        <div class="items item-THREE">Three</div>
+        <div class="items item-FOUR">Four Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quos
+            reprehenderit aspernatur harum maiores incidunt autem, nulla omnis facere in voluptatibus corrupti. Veniam
+            suscipit labore quibusdam commodi! Deserunt, voluptatum nisi. </div>
+        <div class="items item-FIVE">Five</div>
+        <div class="items item-SIX">Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio sapiente
+            aperiam voluptatibus assumenda, quae consectetur. Rem neque dolorum aliquid, esse magnam nobis facere
+            voluptatibus asperiores aperiam. Harum, alias Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+            qui quas dicta saepe neque. Dolorem, odio voluptatem! Quam fugiat laborum ex accusantium, hic et rerum,
+            distinctio nam ut, nisi cumque.</minus>
+
+        </div>
+        <div class="items item-SEVEN">Seven</div>
+        <div class="items item-EIGHT">Eight</div>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <h1> MinMax in coloumn , ye width ki liye hai</h1>
+    <div class="container2">
+        <div class="items item-one">One Lorem ipsum dolor sit amet.</div>
+        <div class="items item-two">Two</div>
+        <div class="items item-three">Three</div>
+        <div class="items item-four">Four Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            reprehenderit,
+            explicabo similique voluptate nesciunt molestiae?</div>
+        <div class="items item-five">Five</div>
+        <div class="items item-six">Six Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quas, ipsa
+            commodi
+            architecto fugiat officia ea odit praesentium incidunt, magni?</div>
+        <div class="items item-seven">Seven</div>
+        <div class="items item-eight">Eight</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

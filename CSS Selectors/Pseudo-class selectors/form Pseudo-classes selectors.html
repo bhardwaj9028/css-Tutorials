@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus {
+            border: 3px solid red;
+        }
+
+        /* input[type='checkbox'] {
+            box-shadow: 0 0 0 3px red;
+        } */
+
+
+        /* input[type='checkbox']:checked {
+            box-shadow: 0 0 0 3px red;
+        } */
+
+
+        /* input[type='radio']:checked {
+            box-shadow: 0 0 0 3px red;
+        } */
+
+
+
+        /* input[type='radio']:checked+label {
+            color: chartreuse;
+        } */
+
+
+
+        /* input[type='checkbox']:checked+label {
+            color: #fa1100;
+        } */
+
+
+
+        /* input[type='text']:enabled{
+            border: 2px solid blue;
+        } */
+
+
+
+
+        /* input[type='text']:disabled{
+            border: 2px solid blue;
+        } */
+
+
+
+        /* input:enabled{
+            border: 2px solid blue;
+        } */
+
+
+
+
+        /* input:required{
+            border: 2px solid red;
+            background: lime;
+            
+        } */
+
+
+
+
+        /* input:optional{
+            border: 2px solid red;
+            background: lime;
+            
+        } */
+
+
+
+        /* input:in-range{
+            border: 2px solid red;
+            background: lime;
+            
+        }
+
+
+        input:out-of-range{
+            border: 2px solid rgb(25, 0, 255);
+            background: #eb07b2;
+            
+        } */
+
+
+
+        /* input:read-only {                                  /*   douts hai isme*/
+        /* border: 2px solid rgb(25, 0, 255);
+            background: #12da33;
+
+        } */
+
+
+
+
+        /* input:read-write {
+          
+            border: 2px solid rgb(25, 0, 255);
+            background: #12da33;
+
+        } */
+
+
+
+        /* input:invalid {
+          
+          border: 2px solid #ca0e27;
+          background: #da12c9;
+        } */
+
+
+
+        /* input:valid {
+          
+          border: 2px solid #ca0e27;          /*   douts hai */
+        /* background: #12da33;
+        } */
+
+
+
+        /* input[type="email"]:invalid {
+          
+          border: 2px solid #ca0e27;
+          background: #da12c9;
+        } */
+
+
+
+
+        /* input:default {
+          
+         box-shadow: 0 0 0 3px red;
+          background: #da12c9;
+        } */
+
+
+
+
+        /* input:default + label {
+          
+          color: #ff0000;
+         }
+ */
+
+
+
+
+        option:default {
+
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label>First Name :</label> <input type="text" required> <br><br>
+
+        <label>last Name :</label> <input type="text" disabled> <br><br>
+        <label>Middle Name :</label> <input type="text" value="hello" readonly> <br><br>
+        <label>your age :</label> <input type="number" min="10" max="20"> <br><br>
+        <label>your Email Id :</label> <input type="email" required> <br><br>
+
+        <label> Your Hobbies</label>
+        <input type="checkbox" name="hobby"><label>sport</label>
+        <input type="checkbox" name="hobby" checked><label>Music</label>
+        <input type="checkbox" name="hobby"><label>Travel</label>
+        <input type="checkbox" name="hobby"><label>Books Reading</label><br><br>
+
+
+
+        <label>Your Gender</label>
+        <input type="radio" name="Gender"> <label>Male</label>
+        <input type="radio" name="Gender"> <label>Female</label>
+
+        <br><br>
+
+        <label>Your Country</label>
+        <select name="country" id="">
+
+            <option value="none">select</option>
+            <option value="india" selected>india</option>
+            <option value="pakistan">pakistan</option>
+            <option value="srilanka">sri lanka</option>
+            <option value="bangladesh">bangladesh</option>
+
+        </select>
+
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

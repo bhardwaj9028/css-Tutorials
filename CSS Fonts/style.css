@@ -1,0 +1,95 @@
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+
+
+  p.normal {
+    font-style: normal;
+  }
+  
+  p.italic {
+    font-style: italic;
+  }
+  
+  p.oblique {
+    font-style: oblique;
+  }
+
+
+
+  p.normal {
+    font-weight: normal;
+  }
+  
+  p.light {
+    font-weight: lighter;
+  }
+  
+  p.thick {
+    font-weight: bold;
+  }
+  
+  p.thicker {
+    font-weight: 900;
+  }
+
+
+
+
+
+  p.normal {
+    font-variant: normal;
+  }
+  
+  p.small {
+    font-variant: small-caps;
+  }
+
+
+
+  .fontsize {
+    font-size: 100px;
+  }
+
+
+
+
+  h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+  }
+  
+  h2 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+   }
+  
+  p {
+    font-size: 0.875em; /* 14px/16=0.875em */
+  }
+
+
+  .font-effect-fire{
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+  }
+
+ 
+
+
+
+  p.a {
+    font: 20px Arial, sans-serif;
+  }
+  
+  p.b {
+    font: italic bold 12px/30px Georgia, serif;
+  }

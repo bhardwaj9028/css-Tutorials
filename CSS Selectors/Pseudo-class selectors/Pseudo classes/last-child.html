@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            padding-left: 40px;
+        }
+
+        .box1,
+        .box2 {
+            padding: 25px 10px;
+            border: 2px solid gray;
+        }
+
+
+        div.container p:last-child {
+            /* ab ye dekhega ki kis box ka last child   p    to jaha ise last  child  p dekhega uspe style apply kar  dega*/
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h3>Box1 Heading</h3>
+            <p>Box1 paragraph One</p>
+            <p>Box1 paragraph Two</p>
+            <p>Box1 paragraph three</p>
+            <p>Box1 paragraph four</p>
+        </div>
+
+        <p>Container paragraph One</p>
+        <p>Container paragraph two</p>
+
+        <div class="box2">
+            <p>Box2 paragraph One</p>
+            <p>Box2 paragraph two</p>
+            <p>Box2 paragraph three</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

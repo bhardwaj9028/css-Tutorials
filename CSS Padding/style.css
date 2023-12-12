@@ -1,0 +1,47 @@
+#div1{
+    border: 1px solid  red;
+    padding-top: 50px;                  /*padding ander se space leata hai*/
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 300px;
+}
+
+
+
+#div2 {
+    border: 1px solid black;
+
+
+    padding: 25px;   /* top, bottom, left, right  ki  liye  hai*/
+    background-color: lightblue;
+  }
+
+
+
+  #div3 {
+    border: 1px solid black;
+
+    /*      T & B   R & L */
+    padding: 25px   50px;
+    background-color: lightblue;
+  }
+
+
+
+
+  #div4 {
+    border: 1px solid black;
+
+    /*      top      right & left   Bottom                  */
+    padding: 25px        50px      75px;
+    background-color: lightblue;
+  }
+
+
+  #div5 {
+    border: 1px solid black;
+
+    /*        top         right        bottom      left                            */
+    padding:  25px         50px        75px        100px;
+    background-color: lightblue;
+  }

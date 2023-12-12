@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid Gap</title>
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica;
+        }
+
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        .container {
+            background-color: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px;
+
+            /*grid-row-gap: 15px;
+			grid-column-gap: 20px;*/
+
+            /* grid-gap: 25px 50px; */
+            /* row ki value 25          and  column ki  50*/
+
+
+            grid-gap: 25px;
+
+
+        }
+
+        .items1 {
+            background: orangered;
+        }
+
+        .items2 {
+            background: yellowgreen;
+        }
+
+        .items3 {
+            background: slateblue;
+        }
+
+        .items4 {
+            background: hotpink;
+        }
+
+        .items5 {
+            background: royalblue;
+        }
+
+        .items6 {
+            background: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Baba : CSS Grid Gap</h1>
+
+    <div class="container">
+        <div class="items items1">First</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Sixth</div>
+    </div>
+</body>
+
+</html>

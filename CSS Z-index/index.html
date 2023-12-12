@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .papa {
+            width: 400px;
+            height: 300px;
+
+            margin: auto;
+            margin-top: 80px;
+            position: relative;
+
+
+
+
+        }
+
+        .child-1 {
+            width: 100px;
+            height: 80px;
+
+
+            background-color: rgb(189, 17, 189);
+            float: left;
+            position: relative;
+            margin: 2px;
+            z-index: 1;
+
+
+        }
+
+
+
+        .child-2 {
+            width: 100px;
+            height: 80px;
+
+            background-color: rgb(126, 214, 26);
+            float: left;
+            margin: 2px;
+            position: relative;
+
+            top: 50px;
+            left: -50px;
+            z-index: 2;
+
+
+        }
+
+
+        .child-3 {
+            width: 100px;
+            height: 80px;
+
+            background-color: rgb(148, 16, 16);
+            float: left;
+            position: relative;
+            margin: 2px;
+            top: 100px;
+            left: -100px;
+            z-index: 3;
+        }
+
+
+
+
+
+
+
+
+
+        /*  revers z - index karna  mtlb idhar ka udhar box ko karna*/
+        .papa1 {
+            width: 400px;
+            height: 300px;
+
+            margin: auto;
+            margin-top: 40px;
+            position: relative;
+
+
+
+
+        }
+
+        .child-4 {
+            width: 100px;
+            height: 80px;
+
+
+            background-color: rgb(189, 17, 189);
+            float: left;
+            position: relative;
+            margin: 2px;
+            z-index: 3;
+
+
+        }
+
+
+
+        .child-5 {
+            width: 100px;
+            height: 80px;
+
+            background-color: rgb(126, 214, 26);
+            float: left;
+            margin: 2px;
+            position: relative;
+
+            top: 50px;
+            left: -50px;
+            z-index: 2;
+
+
+        }
+
+
+        .child-6 {
+            width: 100px;
+            height: 80px;
+
+            background-color: rgb(148, 16, 16);
+            float: left;
+            position: relative;
+            margin: 2px;
+            top: 100px;
+            left: -100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="papa">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <div class="papa1">
+        <div class="child-4">1</div>
+        <div class="child-5">2</div>
+        <div class="child-6">3</div>
+    </div>
+</body>
+
+</html>

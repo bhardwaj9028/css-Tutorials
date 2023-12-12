@@ -1,0 +1,21 @@
+h1 {
+    background-color: green;
+  }
+  
+  div {
+    background-color: lightblue;
+  }
+  
+  p {
+    background-color: yellow;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(243, 14, 14);
+    }div{
+      font-size: 30px;
+      background-color: deeppink;
+    }
+  }

@@ -1,0 +1,103 @@
+#first{
+border: 1px solid black;
+margin-bottom: 30px;                 /* margin bahar se space leata hai*/
+}
+
+#second{
+    border: 2px solid rgb(241, 21, 21);
+    margin-left: 30px;
+}
+
+
+
+
+/* margin by using shorthand*/
+#third{
+    border: 2px solid rgb(241, 21, 21);
+
+    /*       top    right   bottom        left */
+    margin: 90px     4px     9px        300px;
+}
+
+
+
+
+
+
+
+
+ #four{
+    border: 2px solid rgb(241, 109, 21);
+    width: 200px;                       /* margin auto width lagane pe kaam karta hai  width nhi lagaya to kaam nhi karega*/
+    margin: auto;
+    
+}
+
+
+
+
+
+#five{
+    border: 2px solid rgb(21, 241, 39);
+    width: 200px; 
+
+    /*      top  L   B    R  */
+    margin: 30px auto 0px auto;                      /* margin auto width lagane pe kaam karta hai  width nhi lagaya to kaam nhi karega*/
+    
+    
+}
+
+
+
+
+
+#six{
+    border: 2px solid rgb(241, 109, 21);
+    width: 200px;  /* margin auto width lagane pe kaam karta hai  width nhi lagaya to kaam nhi karega*/
+
+    /*   top & bottom   left & R*/
+    margin: 50px       auto;
+    
+}
+
+
+
+
+
+
+
+#seven{
+    border: 1px solid black;
+    /*      top    right & left       bottom*/
+    margin: 25px    50px            75px;
+    background-color: lightblue;
+    
+}
+
+
+#eight{
+    border: 1px solid black;
+
+    /*     top & b     R&L*/
+    margin: 25px       50px;
+    background-color: lightblue;
+}
+
+#nine{
+    border: 1px solid black;
+
+/*           t b L R*/
+    margin: 25px;
+    background-color: lightblue;
+}
+
+
+
+div {
+    border: 1px solid red;
+    margin-left: 100px;
+  }
+  
+  p.ex1 {
+    margin-left: inherit;
+  }

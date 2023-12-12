@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Flexbox</title>
+    <style>
+        body {
+            font-family: arial, helvetica;
+        }
+
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        .container {
+            background: #eee;
+            margin: 50px auto 0;
+            padding: 10px;
+            border: 3px solid #000;
+            height: 400px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .items {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .item1 {
+            background: orangered;
+
+
+            /* align-self   ye  verticaly Alignment  karta hai      aur  iski    total   6 properties  hai      auto , flex-start ,  flex-end ,  center , stretch ,  baseline                agr  aap kisi ek item yani kisi ek div  ko alignment karna chahte hai to aap iska use kar skte hai      */
+
+            /*align-self: flex-start;*/
+            /*align-self: flex-end;*/
+            /*align-self: center;*/
+            align-self: stretch;
+            /*align-self: auto;*/
+        }
+
+        .item2 {
+            background: yellowgreen;
+        }
+
+        .item3 {
+            background: MEDIUMPURPLE;
+        }
+
+        .item4 {
+            background: hotpink;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Baba : CSS Flexbox</h1>
+
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <!--<div class="items item5">Five</div>
+    <div class="items item6">Six</div>
+    <div class="items item7">Seven</div>
+    <div class="items item8">Eight</div>-->
+    </div>
+</body>
+
+</html>

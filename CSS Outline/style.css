@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ p {
+    outline-color:red;
+    
+}
+
+p.dotted {
+    outline-style: dotted;
+    
+
+}
+
+p.dashed {
+    outline-style: dashed;
+    margin-top: 30px;
+    
+}
+
+p.solid {
+    outline-style: solid;
+    margin-top: 30px;
+
+}
+
+p.double {
+    outline-style: double;
+    margin-top: 30px;
+
+}
+
+p.groove {
+    outline-style: groove;
+    margin-top: 30px;
+
+}
+p.ridge {
+    outline-style: ridge;
+    margin-top: 30px;
+
+}
+p.inset {
+    outline-style: inset;
+    margin-top: 30px;
+
+}
+
+p.outset {
+    outline-style: outset;
+    margin-top: 30px;
+
+}
+
+
+
+
+/* The outline-width Property */
+
+p.ex1 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+    margin-top: 30px;
+
+  }
+  
+  p.ex2 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+    margin-top: 30px;
+
+  }
+  
+  p.ex3 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+    margin-top: 30px;
+
+  }
+  
+  p.ex4 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+    margin-top: 30px;
+
+  }
+
+
+  /* CSS Outline Shorthand */
+
+p.ex5 {
+    outline: dashed;
+    margin-top: 30px;
+
+}
+p.ex6 {
+    outline: dotted red;
+    margin-top: 30px;
+
+}
+p.ex7 {
+    outline: 5px solid rgb(0, 140, 255);
+    margin-top: 30px;
+
+}   
+
+p.ex8 {
+    outline: thick ridge rgb(192, 209, 255);
+    margin-top: 30px;
+
+} 
+
+
+
+/* The outline-offset Property   ye  border aur outline ki bich me gape deata hai */
+
+ p.offset {
+    margin: 30px;
+    background:rgb(12, 158, 158);
+    border: 1px solid black;
+    outline: 1px solid rgb(21, 255, 0);
+    outline-offset: 15px;
+  } 
